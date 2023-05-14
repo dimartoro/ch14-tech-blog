@@ -1,0 +1,16 @@
+    {{#each posts as |post|}}
+    <div class="border-2  border-cyan-700 pl-3 bg-indigo-700 text-lg text-white py-2 w-auto font-semibold rounded-t-md">
+        <a class="hover:text-red-300" href="/api/posts/{{post.id}}">{{post.title}}</a>
+      </div>
+      <hr>
+      <div class="w-auto p-6 shadow-lg bg-gray-400 rounded-b-md mb-5">
+        <div class="mb-4">
+          <p>
+            {{post.description}}
+          </p>
+        </div>
+        <div class="bg-blue-400 pl-1">
+          <p>Created on {{format_date post.createdAt}}</p>
+        </div>
+      </div>
+    {{/each}}
