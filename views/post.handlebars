@@ -1,0 +1,23 @@
+<div>I'm a post</div>
+
+<div class="border-2  border-cyan-700 pl-3 bg-indigo-700 text-lg text-white py-2 w-auto font-semibold rounded-t-md">
+        {{title}}
+      </div>
+      <hr>
+      <div class="w-auto p-6 shadow-lg bg-gray-400 rounded-b-md mb-5">
+        <div class="mb-4">
+          <p>
+            {{description}}
+          </p>
+        </div>
+        <div class="bg-blue-400 pl-1">
+          <p>Created on {{format_date createdAt}}</p>
+        </div>
+      </div>
+      <div>
+        Comments to this post:
+      </div>
+      
+      {{!-- {{#each comments as |comment}}
+        <div>{{comment.description}}</div>
+      {{/each}} --}}
