@@ -95,16 +95,6 @@ const newFormHandler = async (event) => {
     .addEventListener('click', delButtonHandler);
   }catch{};
 
-  // try{document
-  //   .querySelector('.edit-post')
-  //   .addEventListener('click', editButtonHandler);
-  // }catch{};
-
-  try{document
-    .querySelector('.update-post')
-    .addEventListener('click', updateButtonHandler);
-  }catch{};
-
   try{document
     .querySelector('#btnShowCreatePost')
     .addEventListener('click', showCreatePost);

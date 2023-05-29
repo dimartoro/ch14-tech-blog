@@ -22,24 +22,6 @@ router.post('/', async(req, res) => {
   }
 });
 
-// Use withAuth middleware to prevent access to route
-router.get('/profile', withAuth, async (req, res) => {
-
-  console.log("11111::::::");
-  try {
-    const userData = await User.findByPk(req.session.user_id
-    );
-    const user = userData.get({ plain: true });
-    // return res.status(200).json(userData);
-    res.render('profile', {
-      ...user,
-      logged_in: req.session.logged_in
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
 router.get('/post', withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id

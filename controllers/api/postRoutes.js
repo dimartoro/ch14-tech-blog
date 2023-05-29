@@ -66,7 +66,6 @@ router.get('/:id', async(req, res)=>{
             ]
         });
         const post = postData.get({ plain: true });
-        //return res.status(200).json(postData);
         res.render('post',{
             ...post,
             logged_in: req.session.logged_in,

@@ -16,7 +16,6 @@ const loginFormHandler = async (event) => {
       console.log(response);
   
       if (response.ok) {
-        // If successful, redirect the browser to the profile page
         document.location.replace('/api/posts');
       } else {
         alert(response.statusText);
