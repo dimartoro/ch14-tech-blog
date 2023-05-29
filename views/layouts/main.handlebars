@@ -15,13 +15,13 @@
       <h1>
         {{!-- <span role="img" aria-label="money">💸</span> --}}
         {{!-- <a id="logo" class="font-bold mr-4" href="/api/gigs"><span><img src="../../public/images/SH_Logo.png" alt="Side Hustle Logo"></span>Side Hustle</a> --}}
-        <a id="logo" class="font-bold mr-4" href="/api/gigs"><span><i class="fa-solid fa-users-gear text-3xl mr-2"></i></span>Tech Blog</a>
+        <a id="logo" class="font-bold mr-4" href="/"><span><i class="fa-solid fa-users-gear text-3xl mr-2"></i></span>Tech Blog</a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a class="font-bold mr-4" href="/api/posts">Home</a> |
-        <a class="font-bold mr-4" href="/profile">Dashboard</a> |
+        <a class="font-bold mr-4" href="/api/posts">Homepage</a> |
+        <a class="font-bold mr-4" href="/post">Dashboard</a> |
         <button class="font-bold mr-4" id="logout">Logout</button>
         {{else}}
         <a class="font-bold mr-4" href="/login">Login</a> |
