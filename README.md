@@ -60,7 +60,11 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 
 
 ## Credits
-https://ultimatesecurity.pro/post/same-site-cookie/
+https://ultimatesecurity.pro/post/same-site-cookie/  
+https://devcenter.heroku.com/articles/git#deploy-your-code  
+https://courses.bootcampspot.com/courses/3100/assignments/48734?module_item_id=890848  
+https://devcenter.heroku.com/articles/jawsdb
+
 
 ## Tests
 Accomplishing the user criteria will successfully test the application.    
