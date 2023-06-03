@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { comment } = require('postcss');
-const {User,Post,Comment} = require('../../models');
+//const { comment } = require('postcss');
+const {Comment} = require('../../models');
 
 router.get('/', async (req,res)=>{
     res.render('comment');
