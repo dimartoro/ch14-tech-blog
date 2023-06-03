@@ -18,7 +18,7 @@ const loginFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/api/posts');
       } else {
-        alert(response.statusText);
+        alert("Your email, password or both are wrong!");
       }
     }
   };
@@ -29,6 +29,11 @@ const loginFormHandler = async (event) => {
     const name = document.querySelector('#name-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
+
+    if(password.length < 8){
+      alert("Password must be at least 8 characters long!");
+      return;
+    }    
   
     if (name && email && password) {
       const response = await fetch('/api/users/signup', {
