@@ -4,7 +4,7 @@ const { route } = require('./userRoutes');
 
 router.get('/', async(req,res)=>{
     try{
-       postData = await Post.findAll();
+       postData = await Post.findAll({include:[{model:User,attributes:['name']}]});
     const posts = postData.map((post) => post.get({ plain: true }));
        res.render('posts',{
         posts,
